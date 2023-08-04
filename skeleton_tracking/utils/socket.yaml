@@ -1,0 +1,7 @@
+SERVER: 'AISL'
+  HOST: '203.250.148.120'
+  PORT: 20519
+    CAM1_CONTAINER: "/Mobius/Edge2Server/Cam1/Human1/la"
+    CAM2_CONTAINER: "/Mobius/Edge2Server/Cam2/Human1/la"
+    CAM3_CONTAINER: "/Mobius/Edge2Server/Cam3/Human1/la"
+    CAM4_CONTAINER: "/Mobius/Edge2Server/Cam4/Human1/la"
