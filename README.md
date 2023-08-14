@@ -12,7 +12,7 @@ docker run --privileged --runtime nvidia -itd --network host \
             --volume /etc/enctune.conf:/etc/enctune.conf \
             --volume /etc/nv_tegra_release:/etc/nv_tegra_release \
             -v /dev:/dev -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix \ 
-            -e XAUTHORITY=/tmp/.docker.xauth hyeongjunjoo/pose3d-orin-realsense
+            -e XAUTHORITY=/tmp/.docker.xauth hyeongjunjoo/pose3d-orin-realsense:v4
 ```
 ```
 xhost +local:docker
