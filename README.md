@@ -4,7 +4,8 @@ Human_pose_estimation
 # Docker pull and run
 ```
 docker pull hyeongjunjoo/pose3d-orin-realsense:v4
-sudo docker run --privileged --runtime nvidia -itd --network host --name pose3d-orin-realsense --volume /tmp/argus_socket:/tmp/argus_socket --volume /etc/enctune.conf:/etc/enctune.conf --volume /etc/nv_tegra_release:/etc/nv_tegra_release  --volume /home/ubuntu/pose3d:/pose3d -v /dev:/dev -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix -e XAUTHORITY=/tmp/.docker.xauth pose3d-orin-realsense:v4
+docker run --privileged --runtime nvidia -itd --network host --name pose3d-orin-realsense --volume /tmp/argus_socket:/tmp/argus_socket --volume /etc/enctune.conf:/etc/enctune.conf --volume /etc/nv_tegra_release:/etc/nv_tegra_release -v /dev:/dev -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix -e XAUTHORITY=/tmp/.docker.xauth hyeongjunjoo/pose3d-orin-realsense
+xhost +local:docker
 ```
 # run Camera RTSP server
 ## Realsense L515
